@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<title>High Chamber</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/sidebar.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+    <style>
+    ::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+    }
+    /* optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    </style>
+
+</head>
+
+<body>
+	<div style="height: 50px;"></div>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+                <a href="#menu-toggle" id="menu-toggle" style="margin-top: -2px" class="glyphicon glyphicon-align-justify navbar-brand"> </a>
+				<span class="navbar-brand" style="margin-left: 0px; margin-right: 5px">GN4R</span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+					<!-- <li>
+						<a href="#"><span class="glyphicon glyphicon-pencil"></span> Blog</a>
+					</li> -->
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="https://github.com/DankBots/GN4R"><span class="glyphicon glyphicon-tasks"></span>  GitHub</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<img src="background.jpg" style="position: fixed; min-height: hpx; min-width: 1920px;" height=100% width=100% >
+	<div id="wrapper">
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav" >
+
+				<li class="sidebar-brand"><a href="#">Bot Commander</a></li>
+				<li><a href="#">_ban (@user)</a></li>
+                <li><a href="#">_unban (user-id)</a></li>
+                <li><a href="#">_mute (@user)</a></li>
+                <li><a href="#">_unmute (@user)</a></li>
+                <li><a href="#">_deletemessages (integer)</a></li>
+
+                <hr>
+				<li class="sidebar-brand"><a href="#">User</a></li>
+				<li><a href="#">_ban (@user)</a></li>
+                <li><a href="#">_unban (user-id)</a></li>
+                <li><a href="#">_mute (@user)</a></li>
+                <li><a href="#">_unmute (@user)</a></li>
+                <li><a href="#">_deletemessages (integer)</a></li>
+                <li><a href="#">_help [command]</a></li>
+                <li><a href="#">_info </a></li>
+                <li><a href="#">_whois (@user)</a></li>
+                <li><a href="#">_invite </a></li>
+                <li><a href="#">_uptime </a></li>
+                <li><a href="#">_math (expression)</a></li>
+                <li><a href="#">_ping </a></li>
+                <li><a href="#">_roll (integer)</a></li>
+                <li><a href="#">_coinflip </a></li>
+                <li><a href="#">_8ball (question)</a></li>
+                <li><a href="#">_google (query)</a></li>
+                <li><a href="#">_youtube (query)</a></li>
+                <li><a href="#">_cbot (query)</a></li>
+                <li><a href="#">_pbot (query)</a></li>
+                <li><a href="#">_tts (string)</a></li>
+                <li><a href="#">_xkcd [number|latest]</a></li>
+                <li><a href="#">_c&h [number|latest]</a></li>
+                <li><a href="#">_rcg </a></li>
+                <li><a href="#">_garfield </a></li>
+                <li><a href="#">_getmedia (id)</a></li>
+                <li><a href="#">_listmedia (img|gif|vine|all)</a></li>
+                <li><a href="#">_cats </a></li>
+                <li><a href="#">_eyes (image url)</a></li>
+                <li><a href="#">_discordgold </a></li>
+                <li><a href="#">_goodshit </a></li>
+                <li><a href="#">_yodatalk (sentence)</a></li>
+                <li><a href="#">_zalgo (query)</a></li>
+                <li><a href="#">_ascii (string)</a></li>
+                <li><a href="#">_leet (string)</a></li>
+                <li><a href="#">_game (query)</a></li>
+                <li><a href="#">_league (LOL Username)</a></li>
+                <li><a href="#">_overwatch (Battle Tag)</a></li>
+                <li><a href="#"> </a></li>
+                <li><a href="#"> </a></li>
+                <li><a href="#"> </a></li>
+                <li><a href="#"> </a></li>
+			</ul>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container">
+				<div class="jumbotron">
+					<h1><b>GN4R</b><br>The Sarcastically Serious Bot</h1>
+				</div>
+			</div>
+			<!-- <div class="container">
+				<img src="http://upload.wikimedia.org/wikipedia/commons/0/03/Vienna_Mozart_Orchestra.JPG" class="img-rounded img-responsive"><br>
+			</div> -->
+			<div class="container">
+				<div class="jumbotron">
+					<div class="row">
+					<div class="col-sm-6">
+						<h2><b>Commands</b></h2>
+						<p>GN4R is a seriously sarcastic or sarcastically serious Discord bot, but who really knows?</p>
+						<p>Looking for the commands? Check the side-bar or type <b>[ _help ]</b> on a server with GN4R.</p>
+					</div>
+					<div class="col-sm-6">
+						<h2><b>Invite GN4R</b></h2>
+						<p>Need GN4R to wake your soul from the darkest deepest depths of Tartarus?</p>
+						<p><a href="https://discordapp.com/oauth2/authorize?client_id=201492375653056512&scope=bot&permissions=8">Invite him</a> to your server today, and enjoy some GN4R goodness.</p>
+					</div>
+					<div class="col-sm-6">
+						<h2><b>Open Source</b></h2>
+						<p>GN4R is mostly written in Java/Kotlin and his code is maintained on GitHub.</p>
+						<p>Interested in contributing? <a href="hhttps://github.com/DankBots/GN4R">Click here</a> to go to the GitHub page.</p>
+					</div>
+					<div class="col-sm-6">
+						<h2><b>Contributors</b></h2>
+						<p>GN4R is written by Avalon and Maeyrl.</p>
+						<p>The former is the serious one and the latter is the sarcastic one.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+
+	<!-- Menu Toggle Script -->
+	<script>
+	$("#menu-toggle").click(function(e)
+    {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+	});
+	</script>
+
+</body>
+
+</html>
