@@ -4,182 +4,539 @@
 <head>
 
     <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <title>Freelancer - Start Bootstrap Theme</title>
 
-	<title>GN4R</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Bootstrap Core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
 
-	<!-- Custom CSS -->
-	<link href="css/sidebar.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-    <style>
-    ::-webkit-scrollbar {
-        width: 0px;  /* remove scrollbar space */
-        background: transparent;  /* optional: just make scrollbar invisible */
-    }
-    /* optional: show position indicator in red */
-    ::-webkit-scrollbar-thumb {
-        background: transparent;
-    }
-    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body>
-	<div style="height: 50px;"></div>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-                <a href="#menu-toggle" id="menu-toggle" style="margin-top: -2px" class="glyphicon glyphicon-align-justify navbar-brand"> </a>
-				<span class="navbar-brand" style="margin-left: 0px; margin-right: 5px">GN4R</span>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="nav navbar-nav">
-					<li class="active">
-						<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
-					<!-- <li>
-						<a href="#"><span class="glyphicon glyphicon-pencil"></span> Blog</a>
-					</li> -->
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="https://github.com/DankBots/GN4R"><span class="glyphicon glyphicon-tasks"></span>  GitHub</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<img src="background.jpg" style="position: fixed; min-height: hpx; min-width: 1920px;" height=100% width=100% >
-	<div id="wrapper">
-		<div id="sidebar-wrapper">
-			<ul class="sidebar-nav" >
+<body id="page-top" class="index">
 
-				<li class="sidebar-brand"><a href="#">Bot Commander</a></li>
-				<li><a href="#">_ban (@user)</a></li>
-                <li><a href="#">_unban (user-id)</a></li>
-                <li><a href="#">_mute (@user)</a></li>
-                <li><a href="#">_unmute (@user)</a></li>
-                <li><a href="#">_deletemessages (integer)</a></li>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">GN4R</a>
+            </div>
 
-                <hr>
-				<li class="sidebar-brand"><a href="#">User</a></li>
-                <li><a href="#">_help [command]</a></li>
-                <li><a href="#">_info </a></li>
-                <li><a href="#">_whois (@user)</a></li>
-                <li><a href="#">_invite </a></li>
-                <li><a href="#">_uptime </a></li>
-                <li><a href="#">_math (expression)</a></li>
-                <li><a href="#">_ping </a></li>
-                <li><a href="#">_roll (integer)</a></li>
-                <li><a href="#">_coinflip </a></li>
-                <li><a href="#">_8ball (question)</a></li>
-                <li><a href="#">_google (query)</a></li>
-                <li><a href="#">_youtube (query)</a></li>
-                <li><a href="#">_cbot (query)</a></li>
-                <li><a href="#">_pbot (query)</a></li>
-                <li><a href="#">_tts (string)</a></li>
-                <li><a href="#">_xkcd [number|latest]</a></li>
-                <li><a href="#">_c&h [number|latest]</a></li>
-                <li><a href="#">_rcg </a></li>
-                <li><a href="#">_garfield </a></li>
-                <li><a href="#">_getmedia (id)</a></li>
-                <li><a href="#">_listmedia (img|gif|vine|all)</a></li>
-                <li><a href="#">_cats </a></li>
-                <li><a href="#">_eyes (image url)</a></li>
-                <li><a href="#">_discordgold </a></li>
-                <li><a href="#">_goodshit </a></li>
-                <li><a href="#">_yodatalk (sentence)</a></li>
-                <li><a href="#">_zalgo (query)</a></li>
-                <li><a href="#">_ascii (string)</a></li>
-                <li><a href="#">_leet (string)</a></li>
-                <li><a href="#">_game (query)</a></li>
-                <li><a href="#">_league (LOL Username)</a></li>
-                <li><a href="#">_overwatch (Battle Tag)</a></li>
-                <li><a href="#"> </a></li>
-                <li><a href="#"> </a></li>
-                <li><a href="#"> </a></li>
-                <li><a href="#"> </a></li>
-			</ul>
-		</div>
-		<!-- /#sidebar-wrapper -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll nav-button">
+                        <a href="#portfolio">Features</a>
+                    </li>
+                    <li class="page-scroll nav-button">
+                        <a href="#commands">Commands</a>
+                    </li>
+                    <li class="page-scroll nav-button">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="get-gnar-button">
+                        <a href="https://discordapp.com/oauth2/authorize?client_id=201492375653056512&scope=bot&permissions=8">Get GN4R</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-		<!-- Page Content -->
-		<div id="page-content-wrapper">
-			<div class="container">
-				<div class="jumbotron">
-					<h1><b>GN4R</b><br>The Sarcastically Serious Bot</h1>
-				</div>
-			</div>
-			<div class="container">
-				<img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg" class="img-rounded img-responsive"><br>
-			</div>
-			<div class="container">
-				<div class="jumbotron">
-					<div class="row">
-					<div class="col-sm-6">
-						<h2><b>Commands</b></h2>
-						<p>GN4R is a seriously sarcastic or sarcastically serious Discord bot, but who really knows?</p>
-						<p>Looking for the commands? Check the side-bar or type <b>[ _help ]</b> on a server with GN4R.</p>
-					</div>
-					<div class="col-sm-6">
-						<h2><b>Invite GN4R</b></h2>
-						<p>Need GN4R to wake your soul from the darkest deepest depths of Tartarus?</p>
-						<p><a href="https://discordapp.com/oauth2/authorize?client_id=201492375653056512&scope=bot&permissions=8">Invite him</a> to your server today, and enjoy some GN4R goodness.</p>
-					</div>
-					<div class="col-sm-6">
-						<h2><b>Open Source</b></h2>
-						<p>GN4R is mostly written in Java/Kotlin and his code is maintained on GitHub.</p>
-						<p>Interested in contributing? <a href="hhttps://github.com/DankBots/GN4R">Click here</a> to go to the GitHub page.</p>
-					</div>
-					<div class="col-sm-6">
-						<h2><b>Contributors</b></h2>
-						<p>GN4R is written by Avalon and Maeyrl.</p>
-						<p>The former is the serious one and the latter is the sarcastic one.</p>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /#page-content-wrapper -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive img-circle" src="img/profile.jpg" alt="">
+                    <div class="intro-text">
+                        <span class="name">GNAR</span>
+                        <hr class="star-light">
+                        <span class="skills">The Sarcastically Serious Bot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	</div>
-	<!-- /#wrapper -->
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Features</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/fun.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/comics.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/privateMessage.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
-	<!-- jQuery -->
-	<script src="js/jquery.js"></script>
+    <!-- About Section -->
+    <section class="success" id="commands">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Commands</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 cik col-lg-offset-1">
+                    <!-- <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p> -->
 
-	<!-- Bootstrap Core JavaScript -->
+                    <ul class="list-group black-text">
+                    	<li class="list-group-item"><span class="badge"> Display GN4R's list of commands.</span> _help</li>
+                    	<li class="list-group-item"><span class="badge"> Show information about GN4R-BOT.</span> _info</li>
+                    	<li class="list-group-item"><span class="badge"> Get information on a user.</span> _whois</li>
+                    	<li class="list-group-item"><span class="badge"> Get a link to invite GN4R to your server.</span> _invite</li>
+                    	<li class="list-group-item"><span class="badge"> Show the bot's uptime.</span> _uptime</li>
+                    	<li class="list-group-item"><span class="badge"> Calculate fancy math expressions.</span> _math</li>
+                    	<li class="list-group-item"><span class="badge"> Show the bot's current response time..</span> _ping</li>
+                    	<li class="list-group-item"><span class="badge"> No descriptions provided.</span> _remindme</li>
+                    	<li class="list-group-item"><span class="badge"> Roll a random number from 0 to argument.</span> _roll</li>
+                    	<li class="list-group-item"><span class="badge"> Heads or Tails?</span> _coinflip</li>
+                    	<li class="list-group-item"><span class="badge"> Test your wildest dreams!</span> _8ball</li>
+                    	<li class="list-group-item"><span class="badge"> Who needs browsers!?</span> _google</li>
+                    	<li class="list-group-item"><span class="badge"> Search and get a YouTube video.</span> _youtube</li>
+                    	<li class="list-group-item"><span class="badge"> Ban users from the server.</span> _ban</li>
+                    	<li class="list-group-item"><span class="badge"> Unban users.</span> _unban</li>
+                    	<li class="list-group-item"><span class="badge"> Mute/silence users from chat.</span> _mute</li>
+                    	<li class="list-group-item"><span class="badge"> Allow users to use chat again.</span> _unmute</li>
+                    	<li class="list-group-item"><span class="badge"> Delete an amount of recent messages from the server.</span> _deletemessages</li>
+                    	<li class="list-group-item"><span class="badge"> Talk to Clever-Bot.</span> _cbot</li>
+                    	<li class="list-group-item"><span class="badge"> Talk to Pandora-Bot.</span> _pbot</li>
+                    </ul>
 
-	<!-- Menu Toggle Script -->
-	<script>
-	$("#menu-toggle").click(function(e)
-    {
-		e.preventDefault();
-		$("#wrapper").toggleClass("toggled");
-	});
-	</script>
+
+                </div>
+                <div class="col-lg-5">
+                    <!-- <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p> -->
+                    <ul class="list-group black-text">
+                    	<li class="list-group-item"><span class="badge"> Text to speech fun.</span> _tts</li>
+                    	<li class="list-group-item"><span class="badge"> Ey keed, want some programmer hum0r?.</span> _xkcd</li>
+                    	<li class="list-group-item"><span class="badge"> Shit-posts from Explosm.</span> _c&h</li>
+                    	<li class="list-group-item"><span class="badge"> Random shit-post generation!</span> _rcg</li>
+                    	<li class="list-group-item"><span class="badge"> Get some of your favorite fat cat comics!</span> _garfield</li>
+                    	<li class="list-group-item"><span class="badge"> Get a png/jpg/gif/vine from GN4R's database.</span> _getmedia</li>
+                    	<li class="list-group-item"><span class="badge"> List all media from GN4R's database.</span> _listmedia</li>
+                    	<li class="list-group-item"><span class="badge"> Get cats! What more do you want!?</span> _cats</li>
+                    	<li class="list-group-item"><span class="badge"> Put weird eyes on people!</span> _eyes</li>
+                    	<li class="list-group-item"><span class="badge"> Tilts dumb people.</span> _discordgold</li>
+                    	<li class="list-group-item"><span class="badge"> go౦ԁ sHit👌.</span> _goodshit</li>
+                    	<li class="list-group-item"><span class="badge"> Learn to speak like Yoda, you will.</span> _yodatalk</li>
+                    	<li class="list-group-item"><span class="badge"> HE COMES.</span> _zalgo</li>
+                    	<li class="list-group-item"><span class="badge"> ASCII text art!</span> _ascii</li>
+                    	<li class="list-group-item"><span class="badge"> Leet it!</span> _leet</li>
+                    	<li class="list-group-item"><span class="badge"> Shit your heart out.</span> _poop</li>
+                    	<li class="list-group-item"><span class="badge"> Look up information about a game.</span> _game</li>
+                    	<li class="list-group-item"><span class="badge"> Look up Leauge of Legends statistics of a player.</span> _league</li>
+                    	<li class="list-group-item"><span class="badge"> Look up Overwatch information about a player.</span> _overwatch</li>
+                    	<li class="list-group-item"><span class="badge"> Get Discord user information</span> _dui</li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Invite GNAR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>
+                        GN4R is mostly written in Java/Kotlin and his code is maintained on GitHub.<br>
+                        Interested in the source code or contributing? <a href="https://github.com/DankBots/GN4R">Click here</a> to go to the GitHub page.<br>
+                        <br>
+                        GN4R is a side-project written by Avalon and Maeyrl.<br>
+                        The former is the serious one and the latter is the sarcastic one.
+                    </p>
+
+                    <center>
+                        <br>
+                        <a href="https://github.com/DankBots/GN4R">
+                            <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-export"></span> GitHub</button>
+                        </a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="https://discordapp.com/oauth2/authorize?client_id=201492375653056512&scope=bot&permissions=8">
+                            <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span> Get GNAR</button>
+                        </a>
+
+                    </center>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place
+                            <br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+
+                    <!-- change to col-md-4 if you want 3 colums -->
+                    <div class="footer-col col-md-12">
+                        <h3>About GNAR</h3>
+                        <p>GN4R is a Discord bot written by Avalon and Maeyrl.<br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Site created by Avalon.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Fun Commands</h2>
+                            <hr class="star-primary">
+                            <img src="img/fun.png" class="img-responsive img-centered" alt="">
+                            <p>GNAR comes packed with fun and silly commands, such as <b>[_zalgo]</b> and <b>[_eyes]</b>, along with game info lookup for <b>Overwatch</b> and <b>Leauge of Legends.</b></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Comics and Media</h2>
+                            <hr class="star-primary">
+                            <img src="img/comics.png" class="img-responsive img-centered" alt="">
+                            <p>We got comics such as <b>xkcd, Cyanide and Happiness, Garfield</b> to warm up your soul, alongside with several media commands like cats, <b>Google and YouTube.</b></p>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Private Messages</h2>
+                            <hr class="star-primary">
+                            <img src="img/privateMessage.png" class="img-responsive img-centered" alt="">
+                            <p>Want to chat with GNAR or use a command in private? Use private messages with him! Call a command like <b>[_help]</b> or <b>[_info]</b>, or just start typing to chat with an AI.</p>
+                            <!-- <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul> -->
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
 
 </body>
 
